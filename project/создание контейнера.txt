@@ -1,0 +1,5 @@
+создание и запуск
+PS C:\Users\Admin> docker run --name mynewdb -e POSTGRES_DB=mynewdb -e POSTGES_USER=myuser -e POSTGRES_PASSWORD=mypassword -p 5432:5432 -d postgres
+
+Переход к управлению Докером
+docker exec -it mynewdb psql -U postgres
